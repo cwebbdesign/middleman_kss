@@ -1,0 +1,11 @@
+<% wrap_layout :layout do %>
+  <div id="styleguide">
+    <%= yield %>
+  </div>
+<% content_for :css_btm do %>
+  <%= stylesheet_link_tag "styleguide" %>
+<% end %>
+<% content_for :js_btm do %>
+  <%= javascript_include_tag "lib/kss" %>
+<% end %>
+<% end %>
