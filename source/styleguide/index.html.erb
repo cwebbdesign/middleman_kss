@@ -2,5 +2,20 @@
 title: Middleman KSS Demo
 ---
 
+<%
+  if current_page.children.length > 0
+     pages = current_page.children
+     pages = pages.sort_by { |s| s.path }
+  end
+%>
 
-<p>Styleguide Index Page</p>
+<h1>Styleguide Index Page</h1>
+
+  <ul class="styleguide-toc">
+
+    <% for page in pages
+         page_path = page.path %>
+         <li><%= link_to page_path.gsub("styleguide/", ""), "../../" + page_path %></li>
+    <% end %>
+
+  </ul>

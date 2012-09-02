@@ -9,14 +9,13 @@
     <!-- Use title if it's in the page YAML frontmatter -->
     <title><%= data.page.title || "Middleman KSS Demo" %></title>
 
-    <%= stylesheet_link_tag "normalize", "all" %>
-    <%= javascript_include_tag  "all" %>
+    <%= stylesheet_link_tag "global" %>
+    <%= javascript_include_tag  "global" %>
   </head>
 
   <body class="<%= page_classes %>">
     <%= yield %>
     <p>&copy; 2012 Chris Webb.</p>
   </body>
-  <%= yield_content :css_btm %>
-  <%= yield_content :js_btm %>
+
 </html>
