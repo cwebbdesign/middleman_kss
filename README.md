@@ -1,4 +1,8 @@
 # Middleman KSS
 
-Further explanation of my intentions coming soon!
+A template for generating a Middleman project with KSS integrated.
+
+This template contains the absolute minimum needed to run KSS + Middleman together.
+
+I intend to make it prettier and include further templates.
 
