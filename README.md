@@ -6,3 +6,4 @@ This template contains the absolute minimum needed to run KSS + Middleman togeth
 
 I intend to make it prettier and include further templates.
 
+[![endorse](http://api.coderwall.com/cwebbdesign/endorsecount.png)](http://coderwall.com/cwebbdesign)
